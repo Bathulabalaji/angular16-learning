@@ -1,0 +1,38 @@
+<div>
+    <app-search (searchTextChanged)="onSearchChange($event)"></app-search>
+    <app-product-list [searchText]="searchText" #productListComponent></app-product-list>
+    <!-- [productListComp]="productListComponentEl" -->
+    <product-details *ngIf="productListComponent.selectedProduct" [product]="productListComponent.selectedProduct"></product-details>
+    <div class="ekart-featured-products">
+        <div class="ekart-featured-product-heading">
+            <h1>Lateset Arrival in Popular brands</h1>
+        </div>
+        <featured-brands>
+            <h3 class="title">New arrivals in Iphone</h3>
+            <button class="call-to-action">show new arrivals in Iphone</button>
+        </featured-brands>
+        <featured-brands>
+            <h3 class="title">New arrivals in Pixels</h3>
+            <button class="call-to-action">show new arrivals in Pixels</button>
+        </featured-brands>
+        <featured-brands>
+            <h3 class="title">New arrivals in Samsung</h3>
+            <button class="call-to-action">show new arrivals in Samsung</button>
+        </featured-brands>
+    </div>
+    <!-- <div>
+        <input type="text" #nameText (focus)="0">
+        <button (click)="nameTextChange(nameText)">submit</button>
+        <app-search [name]="newName" *ngIf="isDestroy">
+            <p #para>user entered name: {{newName}}</p>
+        </app-search>
+    </div>
+<button (click)="destroyChanger()" [setBackground]="{backColor:'yellow',textColor:'black'}">show/hide</button> -->
+    <!-- <button (click)="showPara()">click me</button> -->
+     <div>
+        <app-footer></app-footer>
+     </div>
+     <div>
+        <term-and-conditions></term-and-conditions>
+     </div>
+</div>

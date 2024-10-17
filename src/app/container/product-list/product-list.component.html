@@ -1,0 +1,22 @@
+<app-filter [all]="totalProducts"
+            [inStock]="totalProductsInStock" 
+            [outOfStock]="totalProductsOutOfStock"
+            (selectedFilterRadioButtonChanged)="onFilterChange($event)"
+ ></app-filter>
+
+ <div class="ekart--product--container"> 
+    <ng-container *ngFor="let prod of products">
+        <app-product  [product]="prod"
+         *ngIf="(searchText==='' || prod.name.toLowerCase().includes(searchText) || prod.price<= +searchText) && (selectedFilterRadioButton==='all' || (prod.inStock>0).toString()===selectedFilterRadioButton)"
+         (click)="setSelectedProduct(prod)"
+         ></app-product>
+    </ng-container>
+</div>
+
+
+
+<!-- <div *ngIf="selectedProduct">
+    <product-details [product]="selectedProduct" (dblclick)="removeSelectedProduct()"></product-details>
+</div> -->
+<!-- <div class="ekart--product--container" *ngIf="!selectedProduct || (selectedFilterRadioButton==='all' || (selectedProduct.inStock>0).toString()===selectedFilterRadioButton)"> -->
+

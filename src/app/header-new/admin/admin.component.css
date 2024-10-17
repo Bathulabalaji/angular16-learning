@@ -1,0 +1,29 @@
+.admin-container{
+    width:100%;
+    height: 350px;
+    background-color: cornsilk;
+    padding: 20px;
+    margin: 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+p{
+    padding: 3px;
+    margin: 2px;
+    justify-content: center;
+}
+button{
+    width: 300px;
+    height: 35px;
+    background-color: rgb(214, 69, 76);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 70px;
+    color: white;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
+}

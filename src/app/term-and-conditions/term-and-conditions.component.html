@@ -1,0 +1,43 @@
+<div class="terms-and-conditions-container">
+    <div class="tc-header">
+        <span class="tc-info" >
+            <p>read the terms of services and policies</p>
+        </span>
+        <button (click)="tcInfo()">info</button>
+        <button (click)="tcServices()">services</button>
+        <button (click)="tcPrivacy()">Privacy</button>
+        <button (click)="tcUser()">User agreement</button>
+    </div>
+    
+    <!-- <ng-template  [ngIf]="display" [ngIfElse]="tcbodyElse"> -->
+        <div class="tc-body" [ngSwitch]="opt">
+            <div *ngSwitchDefault>
+                <h4>Terms of services & privacy policy</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora exercitationem dolores optio error minus omnis magnam blanditiis animi in, eius molestias maiores reiciendis itaque mollitia impedit incidunt qui amet expedita.</p>
+            </div>
+            <div *ngSwitchCase="'info'">
+                <h4>Terms of services & privacy policy</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora exercitationem dolores optio error minus omnis magnam blanditiis animi in, eius molestias maiores reiciendis itaque mollitia impedit incidunt qui amet expedita.</p>
+            </div>
+            <div *ngSwitchCase="'services'">
+                <h4>Terms of services</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora exercitationem dolores optio error minus omnis magnam blanditiis animi in, eius molestias maiores reiciendis itaque mollitia impedit incidunt qui amet expedita.</p>
+            </div>
+            <div *ngSwitchCase="'privacy'">
+                <h4>Privacy & policy</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis cupiditate error laboriosam. Harum, qui. Aspernatur dicta cumque doloribus officia sint, assumenda delectus exercitationem atque laborum est! Placeat, aspernatur dolorem.</p>
+            </div>
+            <div *ngSwitchCase="'user'">
+                <h4>User agreement</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis cupiditate error laboriosam. Harum, qui. Aspernatur dicta cumque doloribus officia sint, assumenda delectus exercitationem atque laborum est! Placeat, aspernatur dolorem.</p>
+            </div>
+        </div>
+    <!-- </ng-template> -->
+     <!-- <ng-template #tcbodyElse>
+        <div class="tc-body">
+            <p>else of terms and conditions ,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae odio quidem dignissimos quis odit ab repellendus repellat nemo sint beatae repudiandae, obcaecati eligendi, praesentium nostrum, quod inventore laboriosam illum! A?</p>
+        </div>
+     </ng-template>
+
+     <p *appIf="true">else of terms and conditions </p> -->
+</div>

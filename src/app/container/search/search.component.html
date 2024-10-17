@@ -1,0 +1,22 @@
+<div class="ekart--search--product">
+    <!-- [(ngModel)]="searchText" (input)="onSearchTextChange()" -->
+    <input class="ekart--search--product--input" placeholder="search by products..." #searchInput>
+    <button class="btn btn-search" (click)="onSearchTextChange()"><i class="fa fa-search"></i></button>
+
+    <!-- <input type="text" placeholder="first name" #fullName>
+    <input type="text" placeholder="middle name" #fullName>
+    <input type="text" placeholder="last name" #fullName>
+    <button (click)="displayFullName()">search</button>
+    <h5>your full name is : {{viewName}}</h5> -->
+</div>
+<div class="ekart--search--result--for">
+    <p *ngIf="searchText!=''"><strong>Ekart Search Results For:</strong> {{searchText}}</p>
+</div>
+<!-- <ng-content></ng-content> -->
+<!-- <button (click)="printPara()">search para</button> -->
+ <!-- <button (click)="showProduct()">show product</button> -->
+<!-- <div >
+    <p #paraData [setBackground]="{backColor:'red',textColor:'black'}">Entered Name: {{name}} </p>
+</div> -->
+
+<ng-content></ng-content>

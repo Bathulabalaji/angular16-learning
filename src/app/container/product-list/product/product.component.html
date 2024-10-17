@@ -1,0 +1,41 @@
+<div class="product-container" appHighlight [disableproduct]="product.inStock===0">
+    <div class="product-image">
+        <img [src]="product.pImage" alt="{{product.name}}">
+        <button class="wishlist-btn" [ngStyle]="{color: product.wishlist ? 'red' : '#CECECE'}" (click)="whishlistChange()">
+            <i class="fa fa-heart"></i>
+        </button>
+    </div>
+    <div class="product-details">
+        <h2 class="product-name">{{product.name}}</h2>
+        
+        <div class="product-pricing">
+            <p class="mrp">MRP: <span class="line-through">${{product.price}}</span></p>
+            <p class="current-price">${{(product.price - (product.price * product.discount) / 100).toFixed(0)}}</p>
+            <p class="discount">{{(product.discount).toFixed(0)}}% off</p>
+        </div>
+        
+        <div class="color-options">
+            <button class="color-btn black" (click)="onImageChange('https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70')"></button>
+            <button class="color-btn orange" (click)="onImageChange('https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70')"></button>
+            <button class="color-btn blue" (click)="onImageChange('https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70')"></button>
+            <button class="color-btn green" (click)="onImageChange('https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/z/3/-original-imagtc5fqyz8tu4c.jpeg?q=70')"></button>
+            <button class="color-btn yellow" (click)="onImageChange('https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/f/l/g/-original-imagtc5frtz9j7tb.jpeg?q=70')"></button>
+        </div>
+        <p [ngStyle]="{fontSize:'14px',fontWeight:'bold',marginTop:'10px',color:product.inStock>0? 'green':'red'}">{{product.inStock > 0 ? 'Only ' + product.inStock + ' items left' : 'Out of Stock'}}</p>
+        
+        <div class="product-controls">
+            <button class="quantity-btn" (click)="decrementCartValue()">-</button>
+            <span class="quantity-display">{{product.addToCart}}</span>
+            <button class="quantity-btn" (click)="incrementCartValue()">+</button>
+            
+            <button class="cart-btn" *ngIf="product.inStock; else notifyMe" [ngStyle]="{color: product.cart ? 'white' : 'black' , fontSize:'15px', border:'1px solid white', borderRadius:'5px',backgroundColor:product.cart ? '#6FBE50' :'#ECB937'} " (click)="cartChange()">
+                Add to <i class="fa fa-shopping-cart"></i>
+            </button>
+            <ng-template #notifyMe>
+                <button class="cart-btn" [ngStyle]="{color: 'white' , fontSize:'15px', border:'1px solid white', borderRadius:'5px',backgroundColor:'#9E9797'} " (click)="cartChange()">
+                    Notify Me
+                </button>
+            </ng-template>
+        </div>
+    </div>
+</div>

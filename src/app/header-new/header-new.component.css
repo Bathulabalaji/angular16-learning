@@ -1,0 +1,39 @@
+.header-container{
+    display: ;
+    border: 1px solid blue;
+}
+.header-logo{
+    width:100px;
+    height: 25px;
+    background-color: rgb(96, 231, 255);
+    color: #000;
+    border: 2px solid rgba(255, 0, 0, 0.685);
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    padding: 10px;
+    margin-right: 5px;
+}
+a{
+    padding: 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    background-color: rgb(247, 158, 42);
+}
+button{
+    padding: 0px;
+    border-radius: 10px;
+    background-color: rgb(230, 38, 38);
+    font-weight: bold;
+}
+button:hover{
+    background-color: antiquewhite;
+}

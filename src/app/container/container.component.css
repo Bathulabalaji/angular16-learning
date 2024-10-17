@@ -1,0 +1,38 @@
+.ekart--product--container{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: start;
+}
+.ekart--product--container .product{
+    margin: 20px;
+}
+button{
+    padding: 5px 10px;
+    margin: 0px 5px;
+}
+
+.ekart-featured-products{
+    display: flex;
+    background-color:#282828;
+    padding: 20px 10px;
+}
+.ekart-featured-product-heading{
+    width: 320px;
+    color: white;
+    margin: 10px;
+    padding: 20px 30px;
+}
+.title,.call-to-action{
+    margin: 10px 0px;
+}
+.call-to-action{
+    width: 100%;
+    background-color: #282828;
+    color:white;
+    padding: 10px 0px;
+}
+.call-to-action:hover{
+    background-color: aqua;
+    color: #000;
+    transition: ease-in .5s;
+}

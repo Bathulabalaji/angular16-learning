@@ -1,0 +1,20 @@
+<div class="header-container">
+    <div class="header-logo">MYSITE</div>
+    <span>
+        <div class="header-nav">
+            <a href="#" (click)="HomeClicked()">Home</a>
+            <a href="#" (click)="AdminClicked()">Admin</a>
+            <button class="header-button" (click)="OnSubscribe()">Subscribe</button>
+        </div>
+    </span>
+
+
+    <!-- <div>
+        <app-home></app-home>
+    </div> -->
+</div>
+<div [ngSwitch]="selectedTab">
+    <!-- <app-home *ngSwitchDefault="'home'"></app-home> -->
+    <app-admin *ngSwitchCase="'admin'"></app-admin>
+    <app-home *ngSwitchCase="'home'"></app-home>
+</div>

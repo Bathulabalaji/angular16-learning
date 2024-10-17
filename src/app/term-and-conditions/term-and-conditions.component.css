@@ -1,0 +1,44 @@
+.terms-and-conditions-container{
+    margin: 0;
+    padding: 0px;
+    border: 3px solid black;
+    border-radius: 4px;
+    background-color: rgb(229, 229, 230);
+}
+.tc-header{
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    color:white;
+    justify-content:space-between;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 1px;
+}
+.tc-header button{
+    background-color: rgb(5, 5, 5);
+    margin-right: 5px;
+    display: flex;
+    color: white;
+    border:none;
+    padding: 10px;
+}
+
+.tc-header button:hover{
+    background-color: rgb(190, 185, 185);
+    margin-right: 5px;
+    display: flex;
+    color: rgb(231, 47, 47);
+    border:none;
+    padding: 10px;
+}
+.tc-info{
+ display: flex;
+ align-items: center;
+ justify-content: start;
+ border-bottom: 3px solid rgb(0, 0, 0);  
+ padding: 3px; 
+ margin-bottom: 0;
+}
+.tc-body{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}

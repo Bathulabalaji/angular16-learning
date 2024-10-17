@@ -1,0 +1,13 @@
+.footer-container{
+    margin: 20px 50px;
+    padding: 10px 20px;
+}
+
+.footerHighlight{
+    background-color: rgb(250, 183, 102);
+    border: 3px solid black;
+}
+.footer-font{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}

@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import "~../node_modules/bootstrap/dist/css/bootstrap.min.css"; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Montserrat',sans-serif;
+}
+.highlight-product{
+    -webkit-box-shadow:0 0 1px 3px #000 inset;
+    -moz-box-shadow:0 0 1px 3px #000 inset;
+    border: #fefefe 2px solid;
+    box-shadow: 10px 10px 18px #ccc;
+    transform: scale(1.02);
+    background-color: #b8b8b8;
+}
+
+.disable-out-of-stock-product{
+    background-color: #28282b;
+    opacity: 0.5;
+}

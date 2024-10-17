@@ -1,0 +1,148 @@
+.product-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.product-container:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #212121;
+}
+
+.product-pricing {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.mrp {
+    font-size: 14px;
+    color: #757575;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.current-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.discount {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.color-options {
+    display: flex;
+    gap: 5px;
+    margin-top: -10px;
+}
+
+.color-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.color-btn.black { background-color: black; }
+.color-btn.orange { background-color: rgb(231, 125, 139); }
+.color-btn.blue { background-color: rgb(41, 112, 245); }
+.color-btn.green { background-color: green; }
+.color-btn.yellow { background-color: rgb(223, 238, 13); }
+
+
+
+.product-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #f1f1f1;
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantity-display {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-btn {
+    background: none;
+    border: none;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+
+.wishlist-btn {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+    font-size: 24px; 
+}
+
+
+/* 
+.product{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 30px;
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    flex-direction: column;
+}
+button{
+    padding: 2px 10px;
+    margin: 0px 5px;
+}
+img{
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 28px;
+} */
